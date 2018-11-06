@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+    <meta charset="UTF-8">
+    <script src="libs.js"></script>
+</head>
+<body>
+        <div class="taskbar"></div>
+        <div class="window"></div>
+        <div class="demo">
+            <div class="description">...</div>
+        </div>
+</body>
+<script>
+    $( document ).ready( function () {
+        "use strict";
+
+        // taskbar has to be created first
+        $( ".taskbar" ).taskbar();
+
+        // window is binded to taskbar widget,
+        // so it has to be created second
+        $( ".window" ).window();
+    });
+</script>
+</html>
